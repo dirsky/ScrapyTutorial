@@ -65,7 +65,9 @@ COOKIES_ENABLED = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'ScrapyTutorial.pipelines.ScrapytutorialPipeline': 300,
+   'ScrapyTutorial.pipelines.FilePipeline': 300,
+   'ScrapyTutorial.pipelines.MongoPipeline': 301,
+   'ScrapyTutorial.pipelines.MysqlPipeline': 302,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
