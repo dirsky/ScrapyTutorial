@@ -68,8 +68,9 @@ ITEM_PIPELINES = {
    'ScrapyTutorial.pipelines.FilePipeline': 300,
    'ScrapyTutorial.pipelines.MongoPipeline': 301,
    'ScrapyTutorial.pipelines.MysqlPipeline': 302,
+   'ScrapyTutorial.pipelines.SaveImgPipeline': 303,
 }
-
+IMAGES_STORE = "e:/pics"
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
